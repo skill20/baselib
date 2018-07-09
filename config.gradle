@@ -22,6 +22,8 @@ ext {
     dependencies = [
 
             "appcompat-v7"               : "com.android.support:appcompat-v7:${version["appcompat"]}",
+            "recyclerview"               : "com.android.support:recyclerview-v7:${version["appcompat"]}",
+            "annotations"                : "com.android.support:support-annotations:${version["appcompat"]}",
             "constraint-layout"          : "com.android.support.constraint:constraint-layout:${version["constraint"]}",
 
             "okhttp3"                    : "com.squareup.okhttp3:okhttp:${version["okhttp3"]}",
