@@ -9,19 +9,22 @@ ext {
     ]
 
     version = [
-            appcompat  : "27.1.1",
-            constraint : "1.1.2",
-            okhttp3    : "3.10.0",
-            retrofit2  : "2.4.0",
-            rxandroid  : "2.0.2",
-            rxjava     : "2.1.16",
-            autodispose: "0.8.0",
+            appcompat      : "27.1.1",
+            constraint     : "1.1.2",
+            okhttp3        : "3.10.0",
+            retrofit2      : "2.4.0",
+            rxandroid      : "2.0.2",
+            rxjava         : "2.1.16",
+            autodispose    : "0.8.0",
+            transformations: "2.0.2",
 
     ]
 
     dependencies = [
 
             "appcompat-v7"               : "com.android.support:appcompat-v7:${version["appcompat"]}",
+            "recyclerview"               : "com.android.support:recyclerview-v7:${version["appcompat"]}",
+            "annotations"                : "com.android.support:support-annotations:${version["appcompat"]}",
             "constraint-layout"          : "com.android.support.constraint:constraint-layout:${version["constraint"]}",
 
             "okhttp3"                    : "com.squareup.okhttp3:okhttp:${version["okhttp3"]}",
@@ -36,6 +39,7 @@ ext {
 
             "autodispose"                : "com.uber.autodispose:autodispose:${version["autodispose"]}",
             "autodispose_archcomponents" : "com.uber.autodispose:autodispose-android-archcomponents:${version["autodispose"]}",
+            "glide-transformations"      : "jp.wasabeef:glide-transformations:${version["transformations"]}"
 
     ]
 
