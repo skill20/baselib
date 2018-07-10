@@ -33,6 +33,10 @@ android {
             signingConfig signingConfigs.release
         }
     }
+
+    lintOptions {
+        disable 'GoogleAppIndexingWarning'
+    }
 }
 
 dependencies {
