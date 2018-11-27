@@ -27,35 +27,4 @@ public class BaseFragment extends Fragment {
         super.onDetach();
         mContext = null;
     }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-//        onBackClick();
-    }
-
-    //是否拦截back事件
-    protected boolean interceptBackEvent() {
-        return false;
-    }
-
-    protected void onBackClick() {
-        View view = getView();
-        if (view == null) {
-            return;
-        }
-
-        view.setFocusableInTouchMode(true);
-        view.requestFocus();
-        view.setOnKeyListener(new View.OnKeyListener() {
-
-            @Override
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_UP) {
-                    return interceptBackEvent();
-                }
-                return false;
-            }
-        });
-    }
 }
